@@ -77,22 +77,32 @@ margin: 16px 6px 16px 16px;
     margin: 8px 43px 0px 0;
   }
 
+  .page-content {
+      margin: 0 13%;
+  }
+
+  .page-content.up-content {
+    margin: 0 13%;
+    display: flex;
+}
   .block1   {
-      display: flex;
+    display: flex;
     background-color: #F7F4FE;
   }
 
   .block1__column1  {
-      margin-left: 13%;
       margin-right: 4%;
       width: 30%;
       background-color: lightcoral;
   }
 
   .block1__column2  {
-      margin-right: 13%;
     width: 40%;
     background-color: lightseagreen;
+}
+
+.img    {
+    margin-top: 202px;
 }
 
 h1  {
@@ -183,7 +193,6 @@ margin-left: 10px;
 
 .block2__column1    {
     width: 19%;
-    margin-left: 13%;
     margin-right: 7%;
     font-weight: bold;
     font-size: 24px;
@@ -201,6 +210,10 @@ margin-left: 10px;
 
 .block2__column3    {
     width: 20%;
+}
+
+.banner-block  {
+    display: block;
 }
 
 .banner {
