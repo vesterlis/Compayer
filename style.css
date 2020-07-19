@@ -60,7 +60,6 @@ margin: 16px 6px 16px 16px;
 .up__button  {
     width: 130px;
     height: 40px;
-    line-height: 40px;
     border: 1px solid #7171F5;
     border-radius: 3px; 
     cursor: pointer;
@@ -92,16 +91,15 @@ margin: 16px 6px 16px 16px;
 
   .block1__column1  {
       margin-right: 4%;
-      width: 30%;
-      background-color: lightcoral;
+      width: 43%;
   }
 
   .block1__column2  {
-    width: 40%;
-    background-color: lightseagreen;
+    width: 53%;
 }
 
 .img    {
+    max-width: 100%;
     margin-top: 202px;
 }
 
@@ -126,7 +124,7 @@ padding: 0;
 .block1__start  {
     text-align: center;
     margin-right: 8px;
-    padding: 0 20px;
+
     width: 130px;
     height: 40px;
     border-radius: 3px;
@@ -212,14 +210,10 @@ margin-left: 10px;
     width: 20%;
 }
 
-.banner-block  {
-    display: block;
-}
-
 .banner {
     margin: 80px auto 0 auto;
     display: flex;
-    width: 47%;
+    width: 63%;
     height: 124px;
     background: #1F1F47;
     border-radius: 4px; 
@@ -244,6 +238,10 @@ margin-left: 10px;
     font-size: 14px;
 }
 
+.banner__buttons {
+    display: flex;
+}
+
 .block2__demo  {
     margin-top: 42px;
     margin-right: 8px;
@@ -263,7 +261,6 @@ margin-left: 10px;
 .block2__start  {
     margin-top: 42px;
     text-align: center;
-    padding: 0 20px;
     width: 130px;
     height: 40px;
     border-radius: 3px;
