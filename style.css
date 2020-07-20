@@ -154,14 +154,24 @@ font-size: 16px;
     margin: 40px 0 212px 0;
 }
 
+.block1__whiteBackground    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%; 
+    margin: 12px 8px 0 0px;
+    flex-shrink: 0;
+    }
+
 .block1__connection p {
-width: 68%;
-margin-left: 17px;
+width: 68%; 
 font-size: 12px;
 }
 
 .block1__connection img {
-margin-left: 10px;
 }
 
 .block2__columns {
@@ -221,8 +231,8 @@ margin-left: 10px;
 }
 
 .banner img {
-    width: 47px;
-    height: 44px;
+    width: 7%;
+    height: 35%;
     margin: 41px 20px 0 34px;
 }
 
