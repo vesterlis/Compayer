@@ -49,15 +49,21 @@ body {
     color: black;
 }
 
-/*
-.up__item_current .item  {
-    color: #9BA0A5;
-}
-*/
-
-.header__line,
 .headerSignIn {
     margin-right: 24px;
+    position: relative;
+}
+
+.headerSignIn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 15px;
+    width: 1px;
+    background: #999;
 }
 
 .headerSignIn__button {
@@ -187,12 +193,15 @@ body {
     margin-top: 104px;
 }
 
-section {
+.textsBlockColumn2Answer,
+.textsBlockColumn2Build,
+.textsBlockColumn2Find,
+.textsBlockColumn2Grow,
+.textsBlockColumn2Maintain {
     margin: 0;
     margin-bottom: 6px;
 }
 
-section:not(:first-child),
 section:not(:first-child) {
     margin-top: 32px;
 }

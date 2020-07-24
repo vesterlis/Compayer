@@ -55,12 +55,15 @@
         flex-wrap: wrap;
     }
 
-    section {
+    .textsBlockColumn2Answer,
+    .textsBlockColumn2Build,
+    .textsBlockColumn2Find,
+    .textsBlockColumn2Grow,
+    .textsBlockColumn2Maintain {
         margin: 16px 0 0 0;
     }
 
-    section:not(:first-child),
-    section:not(:first-child) {
+    .textsBlockColumn2Answer {
         margin-top: 0;
     }
 
@@ -146,7 +149,6 @@
         flex-direction: column;
         align-items: center;
         margin: 21px 0 0 0;
-
     }
 
     .footerMenu__link {
