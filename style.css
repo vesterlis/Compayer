@@ -1,11 +1,10 @@
-
-body    {
+body {
     font-family: 'Manrope', sans-serif;
     color: #1F2533;
     margin: 0;
 }
 
-.up  {
+.header {
     display: flex;
     justify-content: space-between;
     line-height: 56px;
@@ -13,57 +12,59 @@ body    {
     background-color: #F7F4FE;
 }
 
-.up__left {
+.headerLogo {
     display: flex;
 }
-.up__right  {
+
+.header__right {
     display: flex;
     font-size: 14px;
 }
 
-.up__logo   {
-display: inline-block;
-width: 24px;
-height: 24px;
-margin: 16px 6px 16px 16px;
+.headerLogo__logo {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 16px 6px 16px 16px;
 }
 
-.up__compayer   {
+.headerLogo__compayer {
     width: 73px;
     height: 9px;
     margin: 23px 0px 24px 0px;
 }
 
-.up__menu  {
+.headerMenu {
     list-style: none;
-    margin: 0;
+    margin: 0 24px 0 0;
     padding-left: 0;
     display: flex;
 }
 
-.up__menu a,
-.up__sign-in a {
+.headerMenu__link,
+.headerSignIn__link {
     text-decoration: none;
     display: block;
     margin: 0 12px 0 12px;
     color: black;
 }
 
-.up__menu a:hover,
-.down__menu a:hover {
+/*
+.up__item_current .item  {
     color: #9BA0A5;
 }
+*/
 
-.up__line,
-.up__sign-in   {
+.header__line,
+.headerSignIn {
     margin-right: 24px;
 }
 
-.up__button  {
+.headerSignIn__button {
     width: 130px;
     height: 40px;
     border: 1px solid #7171F5;
-    border-radius: 3px; 
+    border-radius: 3px;
     cursor: pointer;
     display: block;
     text-align: center;
@@ -71,43 +72,44 @@ margin: 16px 6px 16px 16px;
     color: #7171F5;
     font-family: Manrope;
     font-weight: bold;
-    background-color:#F7F4FE;
+    background-color: #F7F4FE;
     padding: 0 10px;
     margin: 8px 43px 8px 0;
-  }
+}
 
-  .up__cutMenu  {
-      display: none;
-  }
+.header__cutMenu {
+    display: none;
+}
 
-  .page-content {
-      margin: 0 13%;
-  }
+.page-content {
+    margin: 0 13%;
+}
 
-  .page-content.up-content {
+.page-content.up-content {
     display: flex;
 }
-  .block1   {
+
+.coloredBlock {
     display: flex;
     background-color: #F7F4FE;
-  }
+}
 
-  .block1__column1  {
-      margin-right: 4%;
-      width: 43%;
-  }
+.coloredBlock__column1 {
+    margin-right: 4%;
+    width: 43%;
+}
 
-  .block1__column2  {
+.coloredBlock__column2 {
     width: 53%;
 }
 
-.img    {
+.coloredBlockColumn2__img {
     max-width: 100%;
     min-width: 328px;
     margin: 202px 0;
 }
 
-h1  {
+.coloredBlockWhatIs__headline {
     margin-top: 232px;
     margin-bottom: 0;
     font-family: Manrope;
@@ -116,23 +118,23 @@ h1  {
     font-size: 38px;
 }
 
-.block1__lilac  {
+.coloredBlockWhatIs__headline_lilac {
     color: #7171F5;
 }
 
-.block1__whatis p   {
-margin: 16px 0 24px 0;
-padding: 0;
-font-size: 16px;
+.coloredBlockWhatIs__definition {
+    margin: 16px 0 24px 0;
+    padding: 0;
+    font-size: 16px;
 }
 
-.block1__start  {
+.coloredBlock__startButton {
     text-align: center;
     margin-right: 8px;
     width: 130px;
     height: 40px;
     border-radius: 3px;
-    background-color:  #7171F5;
+    background-color: #7171F5;
     border: 1px solid #7171f5;
     color: white;
     font-weight: bold;
@@ -141,12 +143,12 @@ font-size: 16px;
     cursor: pointer;
 }
 
-.block1__demo  {
+.coloredBlock__demoButton {
     text-align: center;
     width: 103px;
     height: 40px;
     border-radius: 3px;
-    color:  #7171F5;
+    color: #7171F5;
     border: 1px solid #7171f5;
     background-color: transparent;
     font-weight: bold;
@@ -155,117 +157,119 @@ font-size: 16px;
     cursor: pointer;
 }
 
-.block1__connection {
+.coloredBlockConnection {
     display: flex;
     align-items: center;
     width: 100%;
     margin: 40px 0 238px 0;
 }
 
-.block1__whiteBackground    {
+.coloredBlockConnection__whiteBackground {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 32px;
     height: 32px;
     background: white;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin-right: 8px;
     flex-shrink: 0;
-    }
-
-.block1__connection p {
-width: 62%; 
-font-size: 12px;
-margin: 0;
 }
 
-.block2__smallerScreen  {
-display: none;
-    }
+.coloredBlockConnection__connectDefinition {
+    width: 62%;
+    font-size: 12px;
+    margin: 0;
+}
 
-.block2__columns {
+.textsBlock__columns {
     display: flex;
     margin-top: 104px;
 }
 
-.block2__columns h3 {
+section {
     margin: 0;
     margin-bottom: 6px;
+}
+
+section:not(:first-child),
+section:not(:first-child) {
+    margin-top: 32px;
+}
+
+.textsBlockColumn2__headline,
+.textsBlockColumn3__headline {
     padding: 0;
     font-weight: bold;
     font-size: 16px;
 }
 
-.block2__columns h3:not(:first-child) {
-    margin-top: 32px;
-}
-
-.block2__columns p {
+.textsBlockColumn2__definition,
+.textsBlockColumn3__definition {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    }
+}
 
-.block2__column1    {
+.textsBlockColumn1 {
     width: 26%;
     margin-right: 10%;
     font-weight: bold;
     font-size: 24px;
 }
 
-.block2__column1 h2   {
+.textsBlockColumn1__headline {
     margin: 0;
     padding: 0;
 }
 
-.block2__column2    {
+.textsBlockColumn2 {
     width: 27%;
     margin-right: 10%;
 }
 
-.block2__column3    {
+.textsBlockColumn3 {
     width: 27%;
 }
 
-.banner {
+.textsBlockBanner {
     margin: 80px auto 0 auto;
     display: flex;
-    width:672px;
+    width: 672px;
     height: 124px;
     background: #1F1F47;
-    border-radius: 4px; 
+    border-radius: 4px;
     color: white;
     font-size: 14px;
     justify-content: space-around;
 }
 
-.banner img {
+.textsBlockBanner__img {
     width: 8%;
     height: 35%;
     margin: 41px 0 0 0;
 }
 
-.banner h3  {
+.textsBlockBannerText {
+    max-width: 37%;
+}
+
+.textsBlockBanner__headline {
     margin: 24px 0 0 0px;
     font-size: 16px;
 }
 
-.banner__increase   {
-    max-width: 37%;
-}
-
-.banner p   {
+.textsBlockBanner__definition {
     padding-top: 4px;
     margin: 0;
     font-size: 14px;
 }
 
-.banner__buttons {
+.textsBlockBannerButtons {
     display: flex;
 }
 
-.block2__demo  {
+.textsBlockBannerButtons__demoButton {
     margin-top: 42px;
     margin-right: 8px;
     text-align: center;
@@ -274,20 +278,20 @@ display: none;
     border-radius: 3px;
     color: white;
     border: 1px solid white;
-    background-color:  transparent;
+    background-color: transparent;
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     cursor: pointer;
 }
 
-.block2__start  {
+.textsBlockBannerButtons__startButton {
     margin-top: 42px;
     text-align: center;
     width: 130px;
     height: 40px;
     border-radius: 3px;
-    background-color:  #7171F5;
+    background-color: #7171F5;
     border: 1px solid #7171f5;
     color: white;
     font-weight: bold;
@@ -296,28 +300,28 @@ display: none;
     cursor: pointer;
 }
 
-.down__logo {
-display: block;
-margin: 80px auto 10px auto;
-width: 24px;
-height: 24px;
+.footerLogo__logo {
+    display: block;
+    margin: 80px auto 10px auto;
+    width: 24px;
+    height: 24px;
 }
 
-.down__compayer {
+.footerLogo__compayer {
     margin: 0 auto;
     display: block;
     width: 73px;
     height: 9px;
 }
 
-.down__menu a {
+.footerMenu__link {
     text-decoration: none;
     display: block;
     margin: 0 12px 0 12px;
     color: black;
 }
 
-.down__menu  {
+.footerMenu {
     list-style: none;
     margin: 25px 0 24px 0;
     padding-left: 0;
@@ -326,7 +330,7 @@ height: 24px;
     font-size: 14px;
 }
 
-.down__copyright {
+.footerCopyright {
     font-size: 12px;
     line-height: 18px;
     margin: 24px 0 24px 0;
@@ -335,4 +339,3 @@ height: 24px;
     justify-content: center;
     color: #9BA0A5;
 }
-

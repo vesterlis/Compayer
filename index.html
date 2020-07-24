@@ -1,122 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" media="screen and (min-width: 361px) and (max-width: 768px)" href="768px.css"/>
-<link rel="stylesheet" media="screen and (max-width:  360px)" href="360px.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-</head>
 
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="768px.css" />
+        <link rel="stylesheet" href="360px.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    </head>
 
-    <header>
-        <div class="up">
-            <div class="up__left">
-        <img class="up__logo" src="img/logo.svg" alt="logo">
-        <img class="up__compayer"src="img/compayer.svg" alt="compayer">
+    <body>
+
+        <header class="header">
+            <div class="headerLogo">
+                <img class="headerLogo__logo" src="img/logo.svg" alt="logo">
+                <img class="headerLogo__compayer" src="img/compayer.svg" alt="compayer">
             </div>
-            <div class="up__cutMenu">
+            <div class="header__cutMenu">
                 <img src="img/up-menu.svg">
             </div>
-            <div class="up__right">
-                <ul class="up__menu">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Company</a></li>
+            <div class="header__right">
+                <ul class="headerMenu">
+                    <li class="headerMenu__item">
+                        <a class="headerMenu__link" href="#">Product</a>
+                    </li>
+                    <li class="headerMenu__item">
+                        <a class="headerMenu__link" href="#">Pricing</a>
+                    </li>
+                    <li class="headerMenu__item">
+                        <a class="headerMenu__link" href="#">Company</a>
+                    </li>
                 </ul>
-                <img class="up__line" src="img/line.svg">
-                <span class="up__sign-in"><a href="#">Sign in</a></span>
-                <button class="up__button">Start for Free</button>
+                <img class="header__line" src="img/line.svg">
+                <span class="headerSignIn">
+                    <a class="headerSignIn__link" href="#">Sign in</a></span>
+                <button class="headerSignIn__button">Start for Free</button>
             </div>
-    </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="block1">
-            <div class="page-content up-content">
-                <div class="block1__column1">
-                <div class="block1__whatis">
-                    <h1>What is <span class="block1__lilac">Compayer</span></h1>
-                    <p>Compayer is the most advanced billing recognition, enrichment and visualizations tool that helps you colsolidate billing and revenue data and make that business improving decision.</p>
-                    <button class="block1__start">Start for Free</button>
-                    <button class="block1__demo">Try Demo</button>
+        <main>
+            <div class="coloredBlock">
+                <div class="page-content up-content">
+                    <div class="coloredBlock__column1">
+                        <div class="coloredBlockWhatIs">
+                            <h1 class="coloredBlockWhatIs__headline">What is <span
+                                    class="coloredBlockWhatIs__headline_lilac">Compayer</span></h1>
+                            <p class="coloredBlockWhatIs__definition">Compayer is the most advanced billing recognition,
+                                enrichment and visualizations tool that helps you colsolidate billing and revenue data
+                                and make that business improving decision.</p>
+                            <button class="coloredBlock__startButton">Start for Free</button>
+                            <button class="coloredBlock__demoButton">Try Demo</button>
+                        </div>
+                        <div class="coloredBlockConnection">
+                            <div class="coloredBlockConnection__whiteBackground">
+                                <img src="img/ic-connect.svg" alt="connect">
+                            </div>
+                            <p class="coloredBlockConnection__connectDefinition">Connect your payment methods and unlock
+                                the
+                                power of real-time decision-making</p>
+                        </div>
+                    </div>
+                    <div class="coloredBlock__column2">
+                        <img class="coloredBlockColumn2__img" src="img/img.svg" alt="img">
+                    </div>
                 </div>
-                <div class="block1__connection">
-                    <div class="block1__whiteBackground">
-                    <img src="img/ic-connect.svg" alt="connect">
-                </div>
-                    <p>Connect your payment methods and unlock the power of real-time decision-making</p>
             </div>
-                </div>
-                <div class="block1__column2">
-                    <img class="img" src="img/img.svg" alt="img">
-                </div>
-            </div>
-        </div>
 
-        <div class="block2">
+            <article class="page-content textsBlock">
+                <div class="textsBlock__columns">
+                    <div class="textsBlockColumn1">
+                        <h2 class="textsBlockColumn1__headline">Trust us with the data streams and we'll connect the dot
+                        </h2>
+                    </div>
+                    <div class="textsBlockColumn2">
+                        <section>
+                            <h3 class="textsBlockColumn2__headline">Answer the burning question</h3>
+                            <p class="textsBlockColumn2__definition">Combine facts with the broader context through our
+                                dashboard. Combine different payment systems, methods, locations, orders and use our
+                                agile filtering to see the data from every angle. </p>
+                        </section>
+                        <section>
+                            <h3 class="textsBlockColumn2__headline">Build your payments analytics stack </h3>
+                            <p class="textsBlockColumn2__definition">Compayer is a data powerhouse, normalization tool,
+                                and
+                                analytic platform, granting you a real-time instant look into all your payment flows.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="textsBlockColumn2__headline">Find footing for negotiations</h3>
+                            <p class="textsBlockColumn2__definition">Knowing the real state of your billing enables you
+                                to
+                                get better conditions from your payment provider.</p>
+                        </section>
+                    </div>
+                    <div class="textsBlockColumn3">
+                        </section>
+                        <h3 class="textsBlockColumn3__headline">Grow your knowledge</h3>
+                        <p class="textsBlockColumn3__definition">Know your actual throughput rates of every uplink.
+                            Learn
+                            the real commisions on every payment method. </p>
+                        </section>
+                        <section>
+                            <h3 class="textsBlockColumn3__headline">Maintain transparency</h3>
+                            <p class="textsBlockColumn3__definition">Billing data is messy. Compayer helps you merge a
+                                lot
+                                of inputs while preserving the focus on impotant metrics.</p>
+                        </section>
+                    </div>
+                </div>
+
+
+                <div class="textsBlockBanner">
+                    <img class="textsBlockBanner__img" src="img/arrow.svg" alt="path">
+                    <div class="textsBlockBannerText">
+                        <h3 class="textsBlockBanner__headline">Increase the value of payments</h3>
+                        <p class="textsBlockBanner__definition">Start using Compayer for free and only pay more when
+                            you
+                            need it.</p>
+                    </div>
+                    <div class="textsBlockBannerButtons">
+                        <button class="textsBlockBannerButtons__demoButton">Try Demo</button>
+                        <button class="textsBlockBannerButtons__startButton">Start for Free</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer class="footer">
             <div class="page-content">
-                <h2 class="block2__smallerScreen">Trust us with the data streams and we'll connect the dot</h2>
-                <div class="block2__columns">
-            <div class="block2__column1">
-                <h2>Trust us with the data streams and we'll connect the dot</h2>
+                <div class="footerLogo">
+                    <img class="footerLogo__logo" src="img/logo.svg" alt="logo">
+                    <img class="footerLogo__compayer" src="img/compayer.svg" alt="compayer">
+                </div>
+                <ul class="footerMenu">
+                    <li class="footerMenu__item">
+                        <a class="footerMenu__link" href="#">Product</a>
+                    </li>
+                    <li class="footerMenu__item">
+                        <a class="footerMenu__link" href="#">Pricing</a>
+                    </li>
+                    <li class="footerMenu__item">
+                        <a class="footerMenu__link" href="#">Company</a>
+                    </li>
+                    <li class="footerMenu__item">
+                        <a class="footerMenu__link" href="#">Privicy Policy</a>
+                    </li>
+                    <li class="footerMenu__item">
+                        <a class="footerMenu__link" href="#">Terms of Use</a>
+                    </li>
+                </ul>
+                <div class="footerCopyright">
+                    <p class="footerCopyright__text">© 2020 Compayer. All rights reserved</p>
+                </div>
             </div>
-            <div class="block2__column2">
-                <h3>Answer the burning question</h3>
-                <p>Combine facts with the broader context through our dashboard. Combine different payment systems, methods, locations, orders and use our agile filtering to see the data from every angle. </p>
-                <h3>Build your payments analytics stack </h3>
-                <p>Compayer is a data powerhouse, normalization tool, and analytic platform, granting you a real-time instant look into all your payment flows. </p>
-                <h3>Find footing for negotiations</h3>
-                <p>Knowing the real state of your billing enables you to get better conditions from your payment provider.</p>             
-            </div>
-            <div class="block2__column3">
-                <h3>Grow your knowledge</h3>
-                <p>Know your actual throughput rates of every uplink. Learn the real commisions on every payment method. </p>
-                <h3>Maintain transparency</h3>
-                <p>Billing data is messy. Compayer helps you merge a lot of inputs while preserving the focus on impotant metrics.</p>
-            </div>
-        </div>
+        </footer>
 
-            <div class="banner">
-                <img src="img/arrow.svg" alt="path">
-                    <div class="banner__increase">
-                        <h3>Increase the value of payments</h3>
-                        <p>Start using Compayer for free and only                          pay more when you need it.</p>
-                    </div>
-                    <div class="banner__buttons">
-                        <button class="block2__demo">Try Demo</button>
-                        <button class="block2__start">Start for Free</button>
-                    </div>
-            </div>
-            </div>
-            </div>
-        </div>
-        </div>
+    </body>
 
-    </main>
-
-    <footer>
-    <div class="page-content">
-        <div class="down">
-            <div class="down__logoCompayer">
-                <img class="down__logo" src="img/logo.svg" alt="logo">
-                <img class="down__compayer"src="img/compayer.svg" alt="compayer">
-            </div>
-            <ul class="down__menu">
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Privicy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-            <div class="down__copyright">
-                <p>© 2020 Compayer. All rights reserved</p>
-            </div>
-        </div>
-        </div>
-    </footer>
-
-</body>
-    </html>
+</html>
